@@ -27,21 +27,19 @@ function TaskForm({ onAdd }) {
 
   if (!showForm) {
     return (
-      <button className="btn btn-primary" onClick={() => setShowForm(true)} style={{ marginBottom: '2rem' }}>
-        + New Task
+      <button className="btn btn-primary" onClick={() => setShowForm(true)} style={{ marginBottom: '1.5rem' }}>
+        New Task
       </button>
     );
   }
 
   return (
     <div className="task-form-card">
-      <div className="task-form-header">
-        <span>✨</span> Create new task
-      </div>
+      <div className="task-form-header">New Task</div>
       <form onSubmit={handleSubmit}>
         <div className="task-form-row">
           <div className="form-group task-form-full">
-            <label>Title *</label>
+            <label>Title</label>
             <input
               type="text"
               value={title}

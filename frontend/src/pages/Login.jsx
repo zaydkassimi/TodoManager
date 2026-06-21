@@ -30,9 +30,8 @@ function Login() {
   return (
     <div className="auth-container">
       <div className="auth-card">
-        <span className="auth-emoji">👋</span>
-        <h1 className="auth-title">Welcome Back</h1>
-        <p className="auth-subtitle">Sign in to continue managing your tasks</p>
+        <h1 className="auth-title">Welcome back</h1>
+        <p className="auth-subtitle">Sign in to manage your tasks</p>
 
         {error && <div className="error-message">{error}</div>}
 

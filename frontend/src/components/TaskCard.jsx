@@ -2,7 +2,7 @@ function TaskCard({ task, onToggle, onDelete }) {
   const isOverdue = task.dueDate && !task.completed && new Date(task.dueDate) < new Date();
 
   return (
-    <div className={`task-card ${task.completed ? '' : ''}`}>
+    <div className="task-card">
       <div
         className={`task-checkbox ${task.completed ? 'completed' : ''}`}
         onClick={() => onToggle(task.id)}
@@ -16,9 +16,6 @@ function TaskCard({ task, onToggle, onDelete }) {
         )}
         <div className="task-meta">
           <span className={`priority-badge priority-${task.priority}`}>
-            {task.priority === 'LOW' && ' '} 
-            {task.priority === 'MEDIUM' && ' '}
-            {task.priority === 'HIGH' && ' '}
             {task.priority}
           </span>
           {task.dueDate && (

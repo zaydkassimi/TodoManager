@@ -31,8 +31,7 @@ function Register() {
   return (
     <div className="auth-container">
       <div className="auth-card">
-        <span className="auth-emoji">🚀</span>
-        <h1 className="auth-title">Create Account</h1>
+        <h1 className="auth-title">Create account</h1>
         <p className="auth-subtitle">Start organizing your tasks today</p>
 
         {error && <div className="error-message">{error}</div>}
@@ -65,7 +64,7 @@ function Register() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Create a password (min 6 characters)"
+              placeholder="Minimum 6 characters"
               required
               minLength={6}
             />
